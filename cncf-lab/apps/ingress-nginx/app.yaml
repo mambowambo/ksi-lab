@@ -13,7 +13,7 @@ spec:
       valuesObject:
         controller:
           hostPort:
-            enabled: true
+            enabled: false
           service:
             type: NodePort
   destination:
