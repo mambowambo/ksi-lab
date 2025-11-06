@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kev-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mambowambo/ksi-lab.git
+    targetRevision: main
+    path: cncf-lab/apps/kev-app
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy: { automated: { prune: true, selfHeal: true } }
