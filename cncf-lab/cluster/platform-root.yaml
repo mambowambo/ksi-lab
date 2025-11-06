@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/mambowambo/ksi-lab.git
     targetRevision: main
-    path: apps
+    path: cncf-lab/apps
     directory:
       recurse: true
   destination:
