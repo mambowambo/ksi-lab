@@ -13,11 +13,15 @@ spec:
       valuesObject:
         controller:
           hostPort:
-            enabled: false        # auf Docker Desktop oft sicherer
+            enabled: false
           service:
             type: NodePort
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
   syncPolicy:
-    automated: { prune: true, selfHeal: true }
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
