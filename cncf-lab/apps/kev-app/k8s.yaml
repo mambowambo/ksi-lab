@@ -34,8 +34,8 @@ data:
     <html>
       <head><title>Hallo Welt</title></head>
       <body style="font-family: sans-serif; text-align:center; margin-top: 5rem;">
-        <h1>Hallo Welt 🌍</h1>
-        <p>Dein Kubernetes-Lab läuft erfolgreich 🚀</p>
+        <h1>Hallo Welt</h1>
+        <p>Dein Kubernetes-Lab laeuft erfolgreich</p>
       </body>
     </html>
 ---
