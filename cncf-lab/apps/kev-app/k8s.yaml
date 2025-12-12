@@ -54,12 +54,20 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hello-world
-  annotations:
-    kubernetes.io/ingress.class: nginx
 spec:
   ingressClassName: nginx
   rules:
     - host: hello.lab.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-world
+                port:
+                  number: 80
+    - host: localhost
       http:
         paths:
           - path: /
