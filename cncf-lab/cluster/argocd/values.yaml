@@ -7,7 +7,7 @@ server:
     enabled: true
     ingressClassName: nginx
     hosts:
-      - argocd.example.com
+      - argocd.lab.local
     paths:
       - /
 configs:
