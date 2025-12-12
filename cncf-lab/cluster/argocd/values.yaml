@@ -3,9 +3,6 @@ server:
     type: ClusterIP
   extraArgs:
     - --insecure
-configs:
-  params:
-    server.insecure: "true"
   ingress:
     enabled: true
     ingressClassName: nginx
@@ -13,3 +10,6 @@ configs:
       - argocd.example.com
     paths:
       - /
+configs:
+  params:
+    server.insecure: "true"
