@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kev-app
-  namespace: argocd
+  namespace: kev-app
 spec:
   project: default
   source:
