@@ -6,3 +6,10 @@ server:
 configs:
   params:
     server.insecure: "true"
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - argocd.example.com
+    paths:
+      - /
